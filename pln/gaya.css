@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+body {
+    font-family: 'Antonio', sans-serif;
+}
+#kotak {
+    display: flex;
+}
+#isi1 {
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#isi2 {
+    padding: 20px;
+    border-style: solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+.isid {
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.inputw {
+    width: 100px;
+}
