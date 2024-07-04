@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>Kalkulator PLN</title>
+  <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="testing2.css">
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+  <script src="penghitung.js"></script>
+
+</head>
+  
+<body>
+  <div class="container pt-4">
+    <h1>Kalkulator tagihan PLN</h1>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="text-center namab">Masukan nama</th>
+            <th class="text-center wattb">Masukan Watt</th>
+            <th class="text-center lamab">Lama pemakaian</th>
+            <th class="text-center"></th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+  
+        </tbody>
+      </table>
+    </div>
+    <button class="btn btn-md btn-primary" 
+      id="addBtn" type="button">
+        Tambah baris baru
+    </button>
+    <button class="btn btn-md btn-primary" onclick="hitung()">Hitung Tagihan</button>
+    <br>
+    <h2>Tagihan yang harus dibayar adalah</h2>
+    <br>
+    <h2 id="total"></h2>
+  </div>
+</body>
+  
+</html>
