@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Pluton.AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <h1>Pluton.AI</h1>
+        <h2>Experimental Preview</h2>
+      </div>
+      <div class="row">
+        <span>
+            <p>Hasil prediksi dari Pluton.AI bisa saja salah. Model ini masih terus berimprovisasi</p>
+          </span>
+        <span>
+          <input class="basic-slide" id="phone" type="text" placeholder="Yuk, analisis sentiment text :D" /><label for="input">Input</label>
+          
+        </span>
+        <span>
+            <h2>Model:</h2>
+            <div class="switch-button">
+                <input class="switch-button-checkbox" type="checkbox"></input>
+                <label class="switch-button-label" for=""><span class="switch-button-label-span">PlutonBERT</span></label>
+              </div>
+            <h2>Interpreted Result: <span id="result"></span></h2>
+            <h2>Raw Results:</h2>
+             <ul id="raw-results"></ul>
+        </span>
+      </div>
+      <div class="row">
+        <span>
+            <h1>Ingin menjalankan inferencing di kode anda sendiri? Berikut adalah beberapa contohnya</h1>
+        </span>
+        <span>
+            <h2>Python</h2>
+            <div class="box">
+        <pre>
+            <code>
+import requests
+import json
+
+url = "https://predict-tf3ihxovta-uc.a.run.app"
+headers = {"Content-Type": "application/json"}
+
+# Ganti "your-text-here" dengan teks yang ingin Anda klasifikasikan
+data = {
+    "text": "your-text-here"
+}
+
+response = requests.post(url, headers=headers, data=json.dumps(data))
+
+# Mencetak status kode dan respon JSON
+print("Status Code: ", response.status_code)
+print("Response: ", response.json())
+
+            </code>
+        </pre>
+        </div>
+        </span>
+        <span>
+            <h2>Node.JS</h2>
+            <div class="box">
+        <pre>
+            <code>
+const fetch = require('node-fetch');
+
+let url = "https://predict-tf3ihxovta-uc.a.run.app";
+let headers = {"Content-Type": "application/json"};
+                
+// Ganti dengan teks yang kamu inginkan
+let data = {
+    "text": "your-text-here"
+    };
+                
+fetch(url, {
+    method: 'POST',
+    headers: headers,
+    body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => console.log('Response: ', data))
+            .catch((error) => console.error('Error:', error));
+                
+
+            </code>
+        </pre>
+        </div>
+        </span>
+        <span>
+            <h2>
+                Ravi Adi Prakoso 2023
+            </h2>
+            <h2>
+                Hosted with Love on Firebase
+            </h2>
+        </span>
+      </div>
+      <script src="script.js"></script>
+      
+</body>
